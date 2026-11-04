@@ -30,6 +30,6 @@ A **Doce Sabor** é uma landing page desenvolvida com foco no comércio de bairr
 ## 🌐 Veja o Projeto Online
 
 Você pode testar a aplicação rodando ao vivo pelo GitHub Pages:  
-👉 
+👉 https://nathaliamarques103.github.io/Projeto-Cafeteria---Doce-Sabor/
 
 ---
