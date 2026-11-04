@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdfbf7;
+    color: #3b2f2f;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #3b2f2f;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+}
+
+.btn-zap-header {
+    background-color: #25d366;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn-principal {
+    background-color: #c67d5a;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cardápio & Filtros */
+.cardapio {
+    padding: 60px 0;
+}
+
+.cardapio h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.filtro-btn {
+    background-color: #f4ebd0;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #3b2f2f;
+    transition: 0.3s;
+}
+
+.filtro-btn.ativo, .filtro-btn:hover {
+    background-color: #3b2f2f;
+    color: #fff;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.produto-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    border: 1px solid #f4ebd0;
+}
+
+.produto-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.preco {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #b2533e;
+    margin: 15px 0;
+}
+
+.btn-pedir {
+    display: inline-block;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-pedir:hover {
+    opacity: 0.9;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #3b2f2f;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 5px 0;
+}

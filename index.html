@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Sabor | Cafeteria & Confeitaria Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">☕ Doce Sabor</h1>
+            <nav class="nav">
+                <a href="#cardapio">Cardápio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="https://wa.me/5511999999999?text=Olá! Gostaria de fazer um pedido." target="_blank" class="btn-zap-header">Pedir no WhatsApp</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>O sabor que transforma o seu dia</h2>
+            <p>Cafés especiais, bolos caseiros e momentos inesquecíveis esperando por você.</p>
+            <a href="#cardapio" class="btn-principal">Ver Cardápio Completo</a>
+        </div>
+    </section>
+
+    <!-- Seção do Cardápio com Filtros -->
+    <section id="cardapio" class="cardapio">
+        <div class="container">
+            <h3>Nosso Cardápio</h3>
+            
+            <!-- Botões de Filtro (Controlados por JavaScript) -->
+            <div class="filtros">
+                <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="cafe">Cafés</button>
+                <button class="filtro-btn" data-filtro="doce">Doces</button>
+                <button class="filtro-btn" data-filtro="salgado">Salgados</button>
+            </div>
+
+            <!-- Grade de Produtos -->
+            <div class="grid-produtos">
+                <!-- Item 1: Café -->
+                <div class="produto-card" data-categoria="cafe">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Café Expresso">
+                    <h4>Café Expresso Cremoso</h4>
+                    <p>Extraído na medida certa, encorpado e aromático.</p>
+                    <span class="preco">R$ 8,00</span>
+                    <button class="btn-pedir" onclick="pedirProduto('Café Expresso Cremoso', 'R$ 8,00')">Pedir no WhatsApp</button>
+                </div>
+
+                <!-- Item 2: Doce -->
+                <div class="produto-card" data-categoria="doce">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="Bolo de Chocolate">
+                    <h4>Fatia de Bolo de Chocolate</h4>
+                    <p>Massa fofinha com cobertura generosa de brigadeiro gourmet.</p>
+                    <span class="preco">R$ 12,50</span>
+                    <button class="btn-pedir" onclick="pedirProduto('Fatia de Bolo de Chocolate', 'R$ 12,50')">Pedir no WhatsApp</button>
+                </div>
+
+                <!-- Item 3: Salgado -->
+                <div class="produto-card" data-categoria="salgado">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80" alt="Quiche de Frango">
+                    <h4>Quiche Artesanal de Frango</h4>
+                    <p>Massa amanteigada com recheio cremoso de frango e requeijão.</p>
+                    <span class="preco">R$ 14,00</span>
+                    <button class="btn-pedir" onclick="pedirProduto('Quiche Artesanal de Frango', 'R$ 14,00')">Pedir no WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="sobre" class="footer">
+        <div class="container">
+            <p><strong>Doce Sabor Cafeteria</strong></p>
+            <p>📍 Rua dos Amores, 456 - Vila Prudente, São Paulo - SP</p>
+            <p>Horário: Terça a Domingo, das 08h às 20h</p>
+        </div>
+    </footer>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
