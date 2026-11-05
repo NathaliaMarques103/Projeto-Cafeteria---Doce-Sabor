@@ -1,6 +1,6 @@
-// 1. Função que formata e abre o WhatsApp com o pedido do cliente
+
 function pedirProduto(nomeProduto, precoProduto) {
-    const telefone = "5511999999999"; // Substitua pelo número real da cafeteria
+    const telefone = "5511999999999";
     const mensagem = `Olá! Gostaria de pedir: *${nameFormatado(nomeProduto)}* (${precoProduto}). Pode confirmar por favor?`;
     const mensagemCodificada = encodeURIComponent(mensagem);
     
